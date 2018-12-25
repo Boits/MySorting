@@ -168,8 +168,8 @@ public class Solution {
         //bubble_sort(x);
         //bubble_sort2(x);
         //quick_sort(x,0,n-1);
-        //x = insert_sort(x);
-        x = merge_sort(x,0,x.length-1);
+        //insert_sort(x);
+        merge_sort(x,0,x.length-1);
 
         for (int i :x){
             System.out.print(i + " ");
