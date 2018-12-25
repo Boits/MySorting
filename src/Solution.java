@@ -2,9 +2,8 @@ import java.io.*;
 import java.util.*;
 
 public class Solution {
-
-    //Сортировка выбором
-    static void sort_selection(int a[]){
+    //Сортировка выбором - O(Nˆ2)
+    static void selection_sort(int a[]){
         for (int i = 0; i < a.length; i++) {
             int min = a[i];
             int min_index = i;
@@ -23,7 +22,7 @@ public class Solution {
         }
     }
 
-    //Сортировка пузырьком
+    //Сортировка пузырьком - O(Nˆ2)
     static void bubble_sort(int[] a) {
 
         for(int i = 1; i < a.length; i++){
@@ -37,7 +36,7 @@ public class Solution {
         }
     }
 
-    //Сортировка пузырьком 2
+    //Сортировка пузырьком 2 - O(Nˆ2)
     static void bubble_sort2(int[] a) {
 
         for(int i = a.length - 1; i > 0; i--){
@@ -51,7 +50,7 @@ public class Solution {
         }
     }
 
-    //Быстрая сортировка
+    //Быстрая сортировка - O(N*LOG(N))
     static void quick_sort(int[] array, int first1, int last1) {
         if (array.length == 0)
             return;
@@ -95,7 +94,7 @@ public class Solution {
 
     }
 
-    // Сортировка вставками
+    // Сортировка вставками - O(Nˆ2)
     static int[] insert_sort(int[] a) {
         int j, temp;
         for (int i = 0; i < a.length; i++) {
@@ -111,7 +110,7 @@ public class Solution {
         return a;
     }
 
-    // Сортировка слиянием
+    // Сортировка слиянием - O(N*LOG(N))
     static int[] merge_sort(int[] array, int start, int end) {
         if (start < end) {
             int middle = (start + end) / 2;
@@ -165,7 +164,7 @@ public class Solution {
             x[i] = scanner.nextInt();
         }
 
-        //sort_selection(x);
+        //selection_sort(x);
         //bubble_sort(x);
         //bubble_sort2(x);
         //quick_sort(x,0,n-1);
